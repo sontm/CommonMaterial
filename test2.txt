@@ -3,4 +3,18 @@
 This is the first application for
 [*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/) 
 by [Michael Hartl](http://michaelhartl.com/).
-https://secure2.store.apple.com/jp/shop/order/guest/W804904081/7f04b618723c268281e17aff8213d4efac8ee6fcc880adeb483ba9fda5700dd31fb51d4a4d298bd4563a7f898b26dfb9edb26b0bf2451c1f6d1c2241d6f09182133d2c1ca4f606ebfeea73bcd857de67?e=true
+
+https://github.com/lava/matplotlib-cpp
+1. Download python https://www.python.org/downloads/release/python-386/
+ pip install numpy
+  pip install matplotlib
+  
+//g++  main.cpp -std=c++11 -I"C:\Users\admin\AppData\Local\Programs\Python\Python38\include" -L"C:\Users\admin\AppData\Local\Programs\Python\Python38\libs" -lpython38
+#define WITHOUT_NUMPY
+#include "matplotlibcpp.h"
+
+namespace plt = matplotlibcpp;
+int main() {
+    plt::plot({1,3,2,4});
+    plt::show();
+}
